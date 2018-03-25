@@ -1,2 +1,2 @@
 # checkinapp
-basic even check in functionality
+basic event check in functionality
