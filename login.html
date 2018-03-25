@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1>Admin Login</h1>
+  <section>
+    <form action="server.js" method="post">
+      <input type="text" id="user" name="user" placeholder="USERNAME" required/><br/>
+      <input type="password" id="password" name="password" placeholder="PASSWORD" required/><br/>
+      <input type="submit" value="Login">
+    </form>
+  </section>
+  <button onclick="checkInNow()">Check In Now</button>
+  <script src="./js/jquery-3.3.1.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

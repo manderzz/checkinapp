@@ -1,0 +1,38 @@
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+td,th{
+	border: 1px solid black;
+	text-align: left;
+	padding: 8px;
+}
+input[type = text]{
+	width: 20%;
+	margin: 8px;
+	border: 2px solid grey;
+	padding: 10px;
+	border-radius: 4px;
+	outline: none;
+}
+input[type = password]{
+	width: 20%;
+	margin: 8px;
+	border: 2px solid grey;
+	padding: 10px;
+	border-radius: 4px;
+	outline: none;
+}
+input[type = text]:focus{
+	border: 2px solid black;
+}
+input[type = submit]{
+	width: 20%;
+	margin: 8px;
+	padding: 10px;
+}
+button{
+  width: 20%;
+	margin: 8px;
+	padding: 10px;
+}
