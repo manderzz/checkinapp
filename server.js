@@ -4,7 +4,7 @@ var http = require('http');
 var mongo = require('mongodb').MongoClient;
 var url = "mongodb://jpa87:RLzG43im@127.0.0.1:27017/cmpt218_jpa87?authSource=admin";
 
-//for eventual multi check in functionality outside of assignment, craete array of check in objects and create
+//for event multi check-in functionality outside of assignment, create an array of check-in objects and
 //new collection based on ID from object in the array.
 
 function dynamicHTMLLanding(){
@@ -174,7 +174,7 @@ app.post('/check-in', function(request, response){
   response.send(htmlStringForCheckIn);
 });
 
-//check in users
+//check-in users
 app.post('/log-in-user', function(request, response){
   var user = {
     checkString: request.body.checkInString,
@@ -221,7 +221,7 @@ app.post('/view-history', function(request, response){
   });
 });
 
-//stopping check in and creating new table
+//stopping check-in and creating new table
 app.post('/stop-check-in',function(request, response){
   if(checkInObject.check == true){
     mongo.connect(url, function(err, client){
@@ -240,7 +240,7 @@ app.post('/stop-check-in',function(request, response){
   }
 });
 
-//dealing with delet request on certain documents
+//Managing delete request on certain documents
 app.delete('/delete/:id', function(request, response){
   mongo.connect(url, function(err, client){
     if(err) console.log(err);
